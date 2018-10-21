@@ -1,5 +1,6 @@
+# 规则 /xxx/ 忽略整个文件夹； xxx/ 忽略文件夹下的所以文件(不包括本文件夹); !xxx.xx 某个文件除外
 .DS_Store
-node_modules/
+/node_modules/
 /dist/
 npm-debug.log*
 yarn-debug.log*

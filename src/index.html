@@ -1,36 +1,64 @@
 <!DOCTYPE html>
-<html>
+<!--[if !IE]>
+  <html>
+<![endif]-->
+<!--[if lte IE 8]>
+  <html style="font-size: 54px">
+<![endif]-->
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta content="yes" name="apple-mobile-web-app-capable">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="zk主页">
     <meta name="full-screen" content="yes">
     <meta name="x5-fullscreen" content="true">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="keywords" content="zk，个人，博客，前端">
+    <meta name="description" content="zk，zk的个人网站，个人博客，前端技术，前端博客">
+    <title>zk的个人博客</title>
+    <!-- <script src="static/js/rem-pc-mobile.js" async="async"></script> -->
+    <!-- flexible.js 加上栅格 默认750-12 -->
+    <meta content="modeName=750-12" name="grid" />
+    <script src="static/js/flexible_css.js"></script>
+    <script src="static/js/flexible.js"></script>
+    <script src="static/js/makegrid.js"></script>
+    
+    <!-- 标签栏图标 -->
     <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+    <!-- 字体图标 -->
     <link rel="stylesheet" type="text/css" href="static/css/iconfont.css">
-    <script src="static/js/main.js"></script>
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="static/css/common.css">
+    <!-- 主页样式 -->
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <!-- <script src="static/js/jquery-3.2.1.js"></script> -->
+    <script src="static/js/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <!-- ie9和ie9一下版本 使用jq-1.12.4 兼容html5标签 css3媒体查询 css3选择器 -->
+    <!--[if lte IE 9]>
+      <script src="static/js/html5shiv.min.js" type="text/javascript"></script>
+      <script src="static/js/respond.min.js" type="text/javascript"></script>
+      <script src="static/js/selectivizr-min.js" type="text/javascript"></script>
+    <![endif]-->
+    
     <title>gulpcli</title>
   </head>
   <body>
     <div id="main">
-      @@include('header.html', {
-        "title": "indexPage"
-      })
       <div>
-
-        <p>这是测试</p>
+        <p class="ft-16">这是20px</p>
+        <p class="fs-test">这是测试</p>
       </div>
-      <img src="static/images/gulp.png"/>
     </div>
-    <script src="static/js/jquery-3.2.1.js"></script>
-    <script src="static/js/bootstrap.min.js"></script>
-    <script src="static/js/ejs.js"></script>
+    <!-- 滚动条插件 -->
+    <script src="static/js/jquery.nicescroll.min.js"></script>
+    <!-- js -->
+    <script src="static/js/index.js"></script>
+    <!--[if lte IE 8]>
+      <script src="static/js/rem-ie8.js"></script>
+      <script src="static/js/rem.min.js"></script>
+    <![endif]-->
   </body>
 </html>
 
