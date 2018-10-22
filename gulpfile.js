@@ -107,6 +107,7 @@ gulp.task('images', () => {
     .pipe(cache(imagemin({
       progressive: true, // 无损压缩JPG图片
       svgoPlugins: [{removeViewBox: false}], // 不移除svg的viewbox属性
+      interlaced: true,
       use: [pngquant()] // 使用pngquant插件进行深度压缩
     })))
     .pipe(gulp.dest(config.build.images))

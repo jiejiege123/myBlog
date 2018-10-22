@@ -1,9 +1,13 @@
 /*
 * @Author: ZZZ
 * @Date:   2018-10-21 16:30:11
-* @Last Modified by:   ZZZ
-* @Last Modified time: 2018-10-21 17:48:49
+* @Last Modified by:   jiejiege123
+* @Last Modified time: 2018-10-22 14:01:24
 */
+
+/*if(navigator.appName == "Microsoft Internet Explorer"&&parseInt(navigator.appVersion.split(";")[1].replace(/[ ]/g, "").replace("MSIE",""))<9){
+    alert("您的浏览器版本过低，请下载IE9及以上版本");
+}*/
 (function(designWidth, maxWidth) {
     var doc = document,
         win = window,

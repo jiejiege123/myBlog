@@ -1,0 +1,125 @@
+// 父元素相对 知道本身高宽
+.middled {
+	position: absolute;  
+  margin: auto;  
+  left: 0;  
+  top: 0;  
+  bottom: 0;  
+  right: 0; 
+}
+html {
+	height: 100%
+}
+body {
+	width: 100%;
+	height: 100%;
+}
+/* 
+* loading 
+*/
+.loading {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	position: fixed;
+	z-index: 999
+	/*border: 1px red solid;*/
+}
+.loadtime {
+	width: 100px;
+	height: 100px;
+	/*position: absolute;
+	margin: 0 auto;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);*/
+	/* 兼容ie8 完美居中 */
+	.middled();
+}
+
+/* 
+* banner 
+*/
+.banner{
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide{
+	text-align: center;
+}
+.slide1 {
+	background: url('../images/banner1.jpg') no-repeat center #000;
+	display: table;
+}
+.slide2 {
+	background: url('../images/banner2.jpg') no-repeat center #000;
+	display: table;
+}
+.banner-info {
+	color: #fff;
+	display: table-cell;
+	vertical-align: middle;
+	padding-bottom: 120px;
+	.banner-logo {
+		width: 132px;
+		height: 132px;
+		margin: 0 auto;
+		img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.banner-title {
+		font-size: 1.666667rem;
+		font-family: '宋体';
+		line-height: 90px;
+		font-weight: lighter;
+		margin: 40px 0;
+	}
+	hr {
+		display: block;
+		width: 160px;
+		height: 1px;
+		border: none;
+		background: #fff;
+		margin: 0 auto;
+	}
+	.banner-text{
+		font-size: 16px;
+		line-height: 56px;
+		font-weight: 100;
+		letter-spacing: 16px;
+		padding-left: 15px;
+	}
+	.dreamText{
+		width: 253px;
+		height: 172px;
+	}
+	.dreamEn{
+		width: 7.740741rem;
+		height: 1.203704rem
+	}
+}
+.my-bullet,.swiper-pagination-switch{
+	width: 60px;
+	height: 1px;
+	background: #fff;
+	border-radius: 0;
+	opacity: 0.2;
+	margin: 0px 5px;
+	cursor: pointer;
+}
+.my-bullet-active,.swiper-active-switch{
+	opacity: 1;
+}
+.swiper-pagination{
+	bottom: 10px;
+  width: 100%;
+  text-align: center;
+  .swiper-pagination-switch{
+  	background: #999;
+  }
+  .swiper-active-switch{
+  	background: #fff;
+  }
+}
