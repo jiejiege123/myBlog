@@ -10,3 +10,5 @@ idangerous.swiper2.7.6.min.js (老IE支持 ie7+)
 rem.min.js 1.3.4（兼容ie8）
 jquery.nicescroll.min.js 3.7.6(滚动条插件 支持ie9+)
 scrollreveal.min.js (鼠标滚动动画插件 ie10+)
+jquery.sticky.js (吸顶效果)
+fullPage.min.js (全屏滚动)

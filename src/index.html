@@ -39,6 +39,7 @@
 
     <!-- <script src="static/js/jquery-3.2.1.js"></script> -->
     <script src="static/js/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <script src="static/js/jquery.sticky.js" type="text/javascript"></script>
     <!-- ie9和ie9一下版本 使用jq-1.12.4 兼容html5标签 css3媒体查询 css3选择器 使用swiper2 -->
     <!--[if lte IE 9]>
       <link rel="stylesheet" href="static/css/idangerous.swiper2.7.6.css">
@@ -95,21 +96,29 @@
     </div>
     <!-- 导航栏 -->
     <div class="navbar">
-      <div class="navlogo">
-        <img src="static/images/nav-logo.png" alt="">
-      </div>
-      <div class="nav-tabs">
-        <ul>
-          <li>博客</li>
-          <li>简历</li>
-          <li>关于</li>
-          <li>案例</li>
-          <li>联系</li>
-        </ul>
-      </div>
+      <nav>
+        <div class="navlogo">
+          <a href="#" title="主页">
+            <img src="static/images/nav-logo.png" alt="主页">
+          </a>
+        </div>
+        <div class="m-nav-menu">
+          <div class="icon-bar">
+          </div>
+        </div>
+        <div class="nav-tabs">
+          <ul>
+            <li><a href="#" title="">博客</a></li>
+            <li><a href="#" title="">简历</a></li>
+            <li><a href="#" title="于">关于</a></li>
+            <li><a href="#" title="">案例</a></li>
+            <li><a href="#" title="">联系</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
     <!-- 关于我 -->
-    <article class="about">
+    <article class="about zindex">
       <div class="main-content">
         <h2 class="content-title">
           ABOUT ME
@@ -122,71 +131,79 @@
           热衷于新技术的学习和探讨，热衷页面布局。崇尚化繁为简理念<br>对互联网发展趋势高兴趣关注，积极配合开发同事完成工作
         </p>
         <ul class="skill-list">
-          <li>
+          <li data-percent="50">
             <div class="skill-item">
               <div class="skill-type">
-                <span class="skill-text"></span>
+                <i class="iconfont icon-Ps skill-text"></i>
                 <span class="skill-per">0%</span>
               </div>
               <div class="skill-upimg">
-                <img src="static/images/wave.png" alt="">
               </div>
             </div>
+            <p class="skill-title">Photoshop</p>
           </li>
-          <li><div class="skill-item">
+          <li data-percent="70">
+            <div class="skill-item">
               <div class="skill-type">
-                <span class="skill-text"></span>
+                <i class="iconfont icon-h5 skill-text"></i>
                 <span class="skill-per">0%</span>
               </div>
               <div class="skill-upimg">
-                <img src="static/images/wave.png" alt="">
               </div>
-            </div></li>
-          <li><div class="skill-item">
+            </div>
+            <p class="skill-title">Html+Css</p>
+          </li>
+          <li data-percent="50">
+            <div class="skill-item">
               <div class="skill-type">
-                <span class="skill-text"></span>
+                <i class="iconfont icon-js skill-text"></i>
                 <span class="skill-per">0%</span>
               </div>
               <div class="skill-upimg">
-                <img src="static/images/wave.png" alt="">
               </div>
-            </div></li>
-          <li><div class="skill-item">
+            </div>
+            <p class="skill-title">Javascript</p>
+          </li>
+          <li data-percent="80">
+            <div class="skill-item">
               <div class="skill-type">
-                <span class="skill-text"></span>
+                <i class="iconfont icon-jquery skill-text"></i>
                 <span class="skill-per">0%</span>
               </div>
               <div class="skill-upimg">
-                <img src="static/images/wave.png" alt="">
               </div>
-            </div></li>
-          <li><div class="skill-item">
+            </div>
+            <p class="skill-title">Jquery</p>
+          </li>
+          <li data-percent="70">
+            <div class="skill-item">
               <div class="skill-type">
-                <span class="skill-text"></span>
+                <i class="iconfont icon-b skill-text"></i>
                 <span class="skill-per">0%</span>
               </div>
               <div class="skill-upimg">
-                <img src="static/images/wave.png" alt="">
               </div>
-            </div></li>
-          <li><div class="skill-item">
+            </div>
+            <p class="skill-title">Bootstrap</p>
+          </li>
+          <li data-percent="60">
+            <div class="skill-item">
               <div class="skill-type">
-                <span class="skill-text"></span>
+                <i class="iconfont icon-vue skill-text"></i>
                 <span class="skill-per">0%</span>
               </div>
               <div class="skill-upimg">
-                <img src="static/images/wave.png" alt="">
               </div>
-            </div></li>
+            </div>
+            <p class="skill-title">Vue</p>
+          </li>
         </ul>
         <a href="#" title="我的简历" class="getmore">
-          我的简历
         </a>
       </div>
     </article>
-    
     <!-- 我的工作 -->
-    <article class="works">
+    <article class="works zindex">
       <div class="main-content">
         <h2 class="content-title">
           MY WORKS
@@ -391,7 +408,7 @@
       </div>
     </article>
     <!-- 广告 -->
-    <article class="adv">
+    <article class="adv zindex">
       <div class="adv-title">
         <h3>想做个网站？</h3>
         <p>如浮舟，泛江河之上，任风雨飘摇，而怡然自得；</p>
@@ -439,7 +456,7 @@
       </div>
     </article>
     <!-- 工作经历 -->
-    <article class="experience">
+    <article class="experience zindex">
       <div class="ex-content">
         <div class="ex-info">
           <img src="static/images/xin.png" alt="心心">
@@ -456,7 +473,7 @@
       </div>
     </article>
     <!-- 联系我 -->
-    <article class="contact">
+    <article class="contact zindex">
       <div class="main-content">
         <h2 class="content-title">
           contact
@@ -492,6 +509,8 @@
     })
     <!-- 滚动条插件 -->
     <script src="static/js/jquery.nicescroll.js"></script>
+    <!-- 全屏滚动插件 -->
+    <script src="static/js/fullPage.min.js"></script>
     <!-- 轮播插件 -->
     <script src="static/js/swiper.min.js" type="text/javascript"></script>
     <script src="static/js/swiper.animate1.0.3.min.js" type="text/javascript"></script>
